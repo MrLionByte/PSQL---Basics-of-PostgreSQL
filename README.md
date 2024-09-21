@@ -71,4 +71,3 @@ This repository is intended to serve as a practice ground for SQL learners, with
 - **Code Blocks**: Each SQL query is enclosed within three backticks (` ```sql `), ensuring that it is displayed as a properly formatted code block.
 - **Subsections**: Organized into subsections for better readability. Each query has a small description to explain its purpose.
 
-This will make the `README.md` well-organized and friendly for learning SQL on GitHub!
