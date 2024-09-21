@@ -2,6 +2,57 @@
 
 On the journey of getting acquainted with SQL, I have tried a few queries, and I thought it’s better to share them here. This collection of queries will help beginners and learners practice SQL concepts across different topics such as basic queries, string manipulation, and ordering.
 
+### FREE DATA TO LEARN SQL
+
+[ COPY CODE ]
+#### Step 1: Create the Worker Table
+```sql
+CREATE TABLE Worker (
+    worker_id BIGSERIAL PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    salary DECIMAL(10, 2),
+    joining_date DATE,
+    department VARCHAR(50)
+);
+```
+
+#### Step 2: Insert Data into the Worker Table
+
+```sql
+INSERT INTO Worker (worker_id, first_name, last_name, salary, joining_date, department)
+VALUES
+(1, 'Monika', 'Arora', 102000, '2019-06-08', 'HR'),
+(2, 'Vishal', 'Singhal', 302000, '2019-06-03', 'HR'),
+(3, 'Amithab', 'Singh', 502000, '2019-06-04', 'Admin'),
+(4, 'Vivek', 'Bhati', 502000, '2019-06-05', 'Admin'),
+(5, 'Vipul', 'Diwan', 202000, '2019-06-05', 'Account'),
+(6, 'Satish', 'Kumar', 77000, '2019-06-14', 'Account'),
+(7, 'Deepika', 'Chauhan', 92000, '2019-06-21', 'Admin'),
+(8, 'Niharika', 'Verma', 82000, '2019-06-02', 'Admin');
+```
+
+#### Step 1: Create the BONUS Table
+```sql
+CREATE TABLE BONUS (
+    worker_ref_id INT,
+    bonus_date DATE,
+    bonus_amount DECIMAL(10, 2)
+);
+```
+
+#### Step 2: Insert Data into the BONUS Table
+
+```sql
+INSERT INTO BONUS (worker_ref_id, bonus_date, bonus_amount)
+VALUES
+(1, '2020-06-02', 5000),
+(2, '2020-06-03', 3000),
+(3, '2020-06-04', 4000),
+(4, '2020-06-05', 4500),
+(5, '2020-06-05', 3500);
+```
+
 ## 1. Basic Select Queries
 
 These queries demonstrate how to select data from tables based on conditions.
